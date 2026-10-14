@@ -15,3 +15,5 @@ class Person:
         # “private” is just a convention
         self._first = first
         self._last = last
+
+Person("John", "Doe")
