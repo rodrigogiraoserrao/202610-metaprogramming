@@ -1,3 +1,12 @@
+"""
+Finish implementing the class `Colour` so that it supports
+three properties: r, g, and b.
+All three properties must have the “basic” getter (like `r`)
+and all three properties must have the setter that performs validation:
+ - the new value is in the range [0, 255] (inclusive)
+ - the new value is an integer
+"""
+
 class Colour:
     def __init__(self, r, g, b):
         self._r = r
