@@ -1,9 +1,8 @@
+_OS = "MacOS"
+
 class Path:
     def __init__(self):
-        ...
-
-
-_OS = "MacOS"
+        print(_OS)
 
 p = Path()
 print(p)  # PosixPath
