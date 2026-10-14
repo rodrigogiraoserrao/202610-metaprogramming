@@ -8,6 +8,10 @@ class ColourComponent:  # Descriptor
     def __get__(self, obj, cls):
         return int(obj.hex[self.start:self.end], 16)
 
+    # __set__ accepts the object that is having one of its attributes
+    # set to, and the value that's being used in the assignment.
+    def __set__(self, obj, value):
+
 class HexColour:
     r = ColourComponent(1, 3)
     g = ColourComponent(3, 5)
