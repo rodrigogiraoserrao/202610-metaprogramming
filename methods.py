@@ -18,7 +18,7 @@ class Method:
         self.lambda_func = lambda_func
 
     def __get__(self, obj, _):
-        ...
+        return lambda: self.lambda_func(obj)
 
 class Person:
     def __init__(self, first, last):
@@ -28,7 +28,7 @@ class Person:
     get_name = Method(lambda self: f"{self.first} {self.last}")
 
 john = Person("John", "Doe")
-print(john.get_name())
+print(john.get_name ())
 
 
 
