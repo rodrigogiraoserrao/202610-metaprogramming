@@ -21,7 +21,7 @@ class PosixPath(Path):
 class WindowsPath(Path):
     ...
 
-p = Path()
+p = Path("my_file.txt")
 print("---")
 print(p)  # PosixPath
 

@@ -2,3 +2,8 @@
 # Define two subclasses of `Number` called `OddNumber` and `EvenNumber`.
 # When you create an instance of `Number(x)`, check the parity of the integer `x`
 # and create an instance of the correct subclass.
+
+# Example: Number(3)  -> OddNumber(3)
+# Example: Number(20) -> EvenNumber(20)
+
+# When you finish, please paste your code in the chat.
