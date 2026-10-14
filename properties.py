@@ -2,8 +2,11 @@ class Person:
     def __init__(self, first, last):
         self.first = first
         self.last = last
-        self.name = f"{first} {last}"
+
+    def name(self):
+        return f"{self.first} {self.last}"
 
 john = Person("John", "Doe")
+print(john.name())
 john.first = "Steve"
-print(john.name)
+print(john.name())
