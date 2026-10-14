@@ -1,6 +1,9 @@
 class GlorifiedAttribute:
-    def __get__(self, obj, _):
+    def __get__(self, _, _):
         return 42
 
 class ClassWithASingleAttribute:
-    bananas = ...
+    bananas = GlorifiedAttribute()
+
+obj = ClassWithASingleAttribute()
+print(obj.bananas)
