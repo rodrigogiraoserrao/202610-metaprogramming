@@ -1,6 +1,10 @@
 class ReadOnlyAttr:
+    def __set_name__(self, owner, name):
+        print("Inside __set_name__")
+        print(owner, name)
+
     def __get__(self, obj, _):
-        return obj.???
+        return None
 
 class Person:
     first = ReadOnlyAttr()
