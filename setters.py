@@ -1,13 +1,13 @@
 class Colour:
     def __init__(self, r, g, b):
-        self.r = r
+        self._r = r
 
     @property
     def r(self):
-        return self.r
+        return self._r
 
 red = Colour(255, 0, 0)
-print(red.r)
+print(red.r)  # 255
 
 red.r = 300
 red.r = -30
