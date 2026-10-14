@@ -7,3 +7,12 @@
 # Example: Number(20) -> EvenNumber(20)
 
 # When you finish, please paste your code in the chat.
+
+class Number:
+    def __new__(cls, value):
+        if cls is Number:
+            cls = OddNumber if value % 2 else EvenNumber
+        return super().__new__(cls)
+
+
+print(OddNumber(42))
