@@ -13,4 +13,5 @@ class Person:
     get_name = Method(lambda self: f"{self.first} {self.last}")
 
 john = Person("John", "Doe")
+print(john.get_name)
 print(john.get_name ())
