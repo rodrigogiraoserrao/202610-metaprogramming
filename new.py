@@ -12,6 +12,7 @@ class Path:
             cls = PosixPath
         print(cls)
         obj = super().__new__(cls)
+        print(f"Object created: {obj}")
         return obj
 
 class PosixPath(Path):
