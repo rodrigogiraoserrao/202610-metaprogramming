@@ -1,0 +1,1 @@
+1. Take a look at `setters.py` and replace the three properties for `r`, `g`, and `b`, with a _single_ descriptor that performs validation on assignment.
