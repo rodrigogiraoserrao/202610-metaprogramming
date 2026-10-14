@@ -3,11 +3,11 @@ class Person:
         self.first = first
         self.last = last
 
-    @property
+    @property  # an attribute access becomes a method call
     def name(self):
         return f"{self.first} {self.last}"
 
 john = Person("John", "Doe")
-print(john.name())
+print(john.name)
 john.first = "Steve"
-print(john.name())
+print(john.name)
