@@ -10,7 +10,7 @@ class Colour:
     def r(self, new_r):
         """Validate the new value of R."""
         if not 0 <= new_r <= 255:
-            raise ValueError
+            raise ValueError("Red must be between 0 and 255")
 
         self._r = new_r
 
