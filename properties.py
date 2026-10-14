@@ -5,4 +5,5 @@ class Person:
         self.name = f"{first} {last}"
 
 john = Person("John", "Doe")
+john.first = "Steve"
 print(john.name)
