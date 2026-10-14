@@ -10,8 +10,6 @@ class ClassWithASingleAttribute:
     bananas = GlorifiedAttribute(42)
     apples = GlorifiedAttribute(23)
 
-print("1")
 obj = ClassWithASingleAttribute()
-print("2")
 print(obj.bananas)
-print("3")
+print(obj.apples)
