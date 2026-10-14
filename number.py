@@ -8,10 +8,14 @@
 
 # When you finish, please paste your code in the chat.
 
+# Improve `OddNumber` and `EvenNumber` so that if they’re instantiated
+# directly with the wrong integers, there’s a runtime error.
+
 class Number:
     def __new__(cls, value):
         if cls is Number:
             cls = OddNumber if value % 2 else EvenNumber
         return super().__new__(cls)
 
-print(Number(42))
+
+print(OddNumber(42))
