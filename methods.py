@@ -12,3 +12,26 @@ Person.get_name = get_name
 print(john.get_name())  # John Doe
 
 # ---
+
+class Person:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+
+    def get_name(self):
+        return f"{self.first} {self.last}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
