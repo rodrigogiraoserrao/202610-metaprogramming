@@ -1,10 +1,11 @@
-class ColourComponent:
-    ...
+class ColourComponent:  # Descriptor
+    def __get__(self, _, __):
+        ...
 
 class HexColour:
-    r = ...
-    g = ...
-    b = ...
+    r = ColourComponent()
+    g = ColourComponent()
+    b = ColourComponent()
 
     def __init__(self, hex_str):
         self.hex = hex_str
