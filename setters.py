@@ -10,6 +10,8 @@ and all three properties must have the setter that performs validation:
 class Colour:
     def __init__(self, r, g, b):
         self._r = r
+        self._g = g
+        self._b = b
 
     @property
     def r(self):
