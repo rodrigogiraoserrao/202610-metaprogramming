@@ -14,17 +14,3 @@ class Person:
 
 john = Person("John", "Doe")
 print(john.get_name ())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
