@@ -12,7 +12,6 @@ class ColourComponent:  # Descriptor
     # set to, and the value that's being used in the assignment.
     def __set__(self, obj, value):
         component_hex = f"{value:02X}"
-
         obj.hex = obj.hex[: self.start] + component_hex + obj.hex[self.end :]
 
 class HexColour:
