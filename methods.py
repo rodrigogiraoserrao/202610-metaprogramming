@@ -13,13 +13,17 @@ print(john.get_name())  # John Doe
 
 # ---
 
+class Method:
+    def __init__(self, lambda_func):
+        self.lambda_func = lambda_func
+
 class Person:
     def __init__(self, first, last):
         self.first = first
         self.last = last
 
-    def get_name(self):
-        return f"{self.first} {self.last}"
+    get_name = Method(lambda self: f"{self.first} {self.last}")
+
 
 
 
