@@ -2,10 +2,13 @@ _OS = "MacOS"
 
 class Path:
     def __init__(self):
-        if _OS == "Windows":
-            ...
-        else:
-            ...
+        ...
+
+def PosixPath(Path):
+    ...
+
+def WindowsPath(Path):
+    ...
 
 p = Path()
 print(p)  # PosixPath
