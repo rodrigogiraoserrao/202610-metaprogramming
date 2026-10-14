@@ -8,7 +8,7 @@ class ColourComponent:  # Descriptor
 class HexColour:
     r = ColourComponent(1, 3)
     g = ColourComponent(3, 5)
-    b = ColourComponent()
+    b = ColourComponent(5, 7)
 
     def __init__(self, hex_str):
         self.hex = hex_str
