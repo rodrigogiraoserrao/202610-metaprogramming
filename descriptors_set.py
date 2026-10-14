@@ -1,6 +1,13 @@
-class ColourComponent
+class ColourComponent:
+    ...
 
 class HexColour:
     r = ...
     g = ...
     b = ...
+
+
+colour = Colour("#ff0000")  # red
+colour.r = 0
+colour.g = 255
+print(colour.hex)  # '#00ff00'
