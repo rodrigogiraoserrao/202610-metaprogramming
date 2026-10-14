@@ -3,6 +3,7 @@ class Person:
         self.first = first
         self.last = last
 
+    @property
     def name(self):
         return f"{self.first} {self.last}"
 
