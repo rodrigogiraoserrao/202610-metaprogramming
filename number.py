@@ -14,5 +14,4 @@ class Number:
             cls = OddNumber if value % 2 else EvenNumber
         return super().__new__(cls)
 
-
-print(OddNumber(42))
+print(Number(42))
