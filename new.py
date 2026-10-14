@@ -6,7 +6,8 @@ class Path:
     # But it's `__new__` that's actually in charge of CREATING
     # a brand new object.
     def __new__(cls):
-        print(cls)
+        obj = super().__new__(cls)
+        return obj
 
 class PosixPath(Path):
     ...
