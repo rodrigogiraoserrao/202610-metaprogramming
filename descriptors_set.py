@@ -2,7 +2,10 @@ class ColourComponent:  # Descriptor
     def __init__(self, start, end):
         self.start, self.end = start, end
 
-    def __get__(self, _, __):
+    #                `obj` is the object that contains the descriptor
+    #                     `cls` the class (or the type) of the object that contains
+    #                     the descriptor
+    def __get__(self, obj, cls):
         ...
 
 class HexColour:
