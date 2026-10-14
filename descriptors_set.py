@@ -6,7 +6,7 @@ class ColourComponent:  # Descriptor
     #                     `cls` the class (or the type) of the object that contains
     #                     the descriptor
     def __get__(self, obj, cls):
-        ...
+        return int(obj.hex[self.start:self.end], 16)
 
 class HexColour:
     r = ColourComponent(1, 3)
