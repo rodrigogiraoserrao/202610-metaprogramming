@@ -4,10 +4,10 @@ class Person:
         self.last = last
 
     @property  # an attribute access becomes a method call
-    def name(self):
+    def _name(self):
         return f"{self.first} {self.last}"
 
 john = Person("John", "Doe")
-print(john.name)
+print(john._name)
 john.first = "Steve"
-print(john.name)
+print(john._name)
