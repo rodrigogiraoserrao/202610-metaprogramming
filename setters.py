@@ -6,6 +6,10 @@ class Colour:
     def r(self):
         return self._r
 
+    @r.setter
+    def r(self, new_r):
+        """Validate the new value of R."""
+
 red = Colour(255, 0, 0)
 print(red.r)  # 255
 
