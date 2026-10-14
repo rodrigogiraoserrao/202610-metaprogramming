@@ -5,6 +5,7 @@ class Method:
     def __get__(self, obj, _):
         def bound_method(*args, **kwargs):
             return self.lambda_func(obj, *args, **kwargs)
+
         return bound_method
 
 class Person:
