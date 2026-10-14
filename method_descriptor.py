@@ -3,14 +3,9 @@ class Method:
         self.lambda_func = lambda_func
 
     def __get__(self, obj, _):
-        return lambda *args, **kwargs: self.lambda_func(obj, *args, **kwargs)
-
-    def __get__(self, obj, _):
         def bound_method(*args, **kwargs):
             return self.lambda_func(obj, *args, **kwargs)
         return bound_method
-
-    def 
 
 class Person:
     def __init__(self, first, last):
