@@ -9,6 +9,10 @@ class Colour:
     @r.setter
     def r(self, new_r):
         """Validate the new value of R."""
+        if not 0 <= new_r <= 255:
+            raise ValueError
+
+        self._r = new_r
 
 red = Colour(255, 0, 0)
 print(red.r)  # 255
