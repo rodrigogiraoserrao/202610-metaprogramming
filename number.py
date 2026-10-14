@@ -18,10 +18,7 @@ class Number:
         return super().__new__(cls)
 
 class OddNumber(Number):
-    def __init__(self, value):
-        print(self)
-        if value % 2 == 0:
-            raise RuntimeError(f"{value} isn't odd!")
+        
 
 class EvenNumber(Number):
     ...
