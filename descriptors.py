@@ -1,5 +1,5 @@
 class GlorifiedAttribute:  # Descriptor: class WITH a method __get__
-    def __get__(self, _1, _2):
+    def __get__(self, _, __):
         print("Inside __get__ in GlorifiedAttribute")
         return 42
 
