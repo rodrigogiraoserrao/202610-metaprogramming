@@ -5,7 +5,7 @@ class ColourComponent:  # Descriptor
     #                `obj` is the object that contains the descriptor
     #                     `cls` the class (or the type) of the object that contains
     #                     the descriptor
-    def __get__(self, obj, _cls):
+    def __get__(self, obj, cls):
         return int(obj.hex[self.start:self.end], 16)
 
     # __set__ accepts the object that is having one of its attributes
