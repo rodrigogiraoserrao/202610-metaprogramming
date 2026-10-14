@@ -6,6 +6,11 @@ class Path:
     # But it's `__new__` that's actually in charge of CREATING
     # a brand new object.
     def __new__(cls):
+        if _OS == "Windows":
+            cls = WindowsPath
+        else:
+            cls = PosixPath
+        print(cls)
         obj = super().__new__(cls)
         return obj
 
