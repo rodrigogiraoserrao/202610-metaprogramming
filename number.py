@@ -17,12 +17,17 @@ class Number:
             cls = OddNumber if value % 2 else EvenNumber
         return super().__new__(cls)
 
+    def __init__(self, value):
+        self.value = value
+
 class OddNumber(Number):
     def __new__(cls, value):
         if value % 2 == 0:
             raise ValueError(f"{value} isn't odd!")
+        super().__new__(cls, value)
 
 class EvenNumber(Number):
     ...
 
-print(OddNumber(42))
+print(en := EvenNumber(42))
+print(en.value)
